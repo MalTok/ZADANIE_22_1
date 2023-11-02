@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pl" xmlns:th="https://www.thymeleaf.org">
+<body>
+<header th:fragment="header">
+    <div class="logo">
+        <a th:href="@{/}" href="/"><img th:src="@{klucz-clipart.png}" src="/klucz-clipart.png"
+                                        alt="Klucz płaski w kole zębatym"></a>
+    </div>
+    <div class="firm-data">
+        <h1>Autoserwis</h1>
+        <h1>Tadeusz Paprak Sp. z o.o.</h1>
+        <p>ul. Krzywej Felgi 20B, 73-110 Stargard</p>
+    </div>
+</header>
+<footer th:fragment="footer">
+    <div class="copy">
+        <p>All rights reserved &copy;2023</p>
+    </div>
+    <div class="opening-hours">
+        <p>Godziny otwarcia:</p>
+        <p>pn - pt: 08:00-18:00</p>
+        <p>sb: 09:00-13:00</p>
+        <p>nd: zamknięte</p>
+    </div>
+</footer>
+</body>
+</html>
